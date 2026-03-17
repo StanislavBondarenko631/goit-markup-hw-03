@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -32,11 +38,19 @@ p {
 }
 
 .container {
-  max-width:;
-  padding-left:;
-  padding-right:;
-  margin-left:;
-  margin-right:;
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
+}
+
+.page-header {
+
+}
+
+.page-header .container {
+
 }
 
 .link-nav {
@@ -135,6 +149,7 @@ p {
 }
 
 .logo-link {
+  margin: 
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
