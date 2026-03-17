@@ -44,7 +44,29 @@ p {
   justify-content: space-between;
 }
 
+.logo-nav,
+.navi-links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navi-links {
+  gap: 40px;
+}
+
+.logo-nav {
+  gap: 76px;
+}
+
+.address-block {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
 .link-nav {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -60,6 +82,8 @@ p {
 }
 
 .link-address {
+  display: block;
+  padding: 24px 0;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -140,6 +164,7 @@ p {
 }
 
 .logo-link {
+  padding: 24px 0;
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
