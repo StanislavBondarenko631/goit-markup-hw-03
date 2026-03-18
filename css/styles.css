@@ -39,37 +39,7 @@ p {
   margin-right: auto;
 }
 
-.page-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.container-header {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-nav,
-.navi-links {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.logo-nav {
-  gap: 76px;
-}
-
-.navi-links {
-  gap: 40px;
-}
-
 .link-nav {
-  display: block;
-  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -84,31 +54,7 @@ p {
   color: #404bbf;
 }
 
-.logo-link {
-  padding: 24px 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-.logo-link-span {
-  color: #2e2f42;
-}
-
-.address-list {
-  display: flex;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
 .link-address {
-  display: block;
-  padding: 24px 0;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -124,33 +70,13 @@ p {
   color: #404bbf;
 }
 
-.hero-background {
-  text-align: center;
-  background-color: #2e2f42;
-}
-
 .hero-text {
-  padding: 188px 300px 48px 300px;
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 1.07;
   color: #ffffff;
-}
-
-.button {
-  color: #ffffff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
 }
 
 .our-team {
@@ -189,6 +115,44 @@ p {
   color: #2e2f42;
 }
 
+.button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+
+.footer-background-color {
+  background-color: #2e2f42;
+}
+
+.logo-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-link-span {
+  color: #2e2f42;
+}
+
+.hero-background {
+  background-color: #2e2f42;
+}
+
 .our-features {
   text-align: left;
   font-weight: 700;
@@ -222,10 +186,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.footer-background-color {
-  background-color: #2e2f42;
 }
 
 .logo-link-span-footer {
