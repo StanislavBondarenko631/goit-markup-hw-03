@@ -124,6 +124,10 @@ p {
   color: #ffffff;
 }
 
+.hero-background {
+  background-color: #2e2f42;
+}
+
 .our-team {
   text-align: center;
   font-weight: 700;
@@ -176,10 +180,6 @@ p {
 }
 
 .footer-background-color {
-  background-color: #2e2f42;
-}
-
-.hero-background {
   background-color: #2e2f42;
 }
 
