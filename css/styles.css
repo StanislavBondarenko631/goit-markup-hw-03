@@ -75,6 +75,22 @@ p {
   color: #404bbf;
 }
 
+.logo-link {
+  padding: 24px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-link-span {
+  color: #2e2f42;
+}
+
 .address-block {
   display: flex;
   justify-content: flex-end;
@@ -161,22 +177,6 @@ p {
 
 .footer-background-color {
   background-color: #2e2f42;
-}
-
-.logo-link {
-  padding: 24px 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-.logo-link-span {
-  color: #2e2f42;
 }
 
 .hero-background {
