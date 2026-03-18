@@ -91,7 +91,7 @@ p {
   color: #2e2f42;
 }
 
-.address-block {
+.address-list {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
@@ -179,10 +179,6 @@ p {
   background-color: #404bbf;
 }
 
-.footer-background-color {
-  background-color: #2e2f42;
-}
-
 .our-features {
   text-align: left;
   font-weight: 700;
@@ -216,6 +212,10 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.footer-background-color {
+  background-color: #2e2f42;
 }
 
 .logo-link-span-footer {
