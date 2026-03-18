@@ -50,17 +50,11 @@ p {
   justify-content: flex-start;
 }
 
-.navi-links {
-  gap: 40px;
-}
-
 .logo-nav {
   gap: 76px;
 }
 
-.address-block {
-  display: flex;
-  justify-content: flex-end;
+.navi-links {
   gap: 40px;
 }
 
@@ -79,6 +73,12 @@ p {
 .link-nav:active,
 .link-nav:focus {
   color: #404bbf;
+}
+
+.address-block {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
 }
 
 .link-address {
