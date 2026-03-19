@@ -165,12 +165,19 @@ address ul {
   border: none;
   border-radius: 4px;
 }
+
 .button:hover,
 .button:focus {
   background-color: #404bbf;
 }
 
 /* ----our-features----- */
+/* задаем внешние отступы сверху и снизу */
+.our-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -193,8 +200,32 @@ address ul {
   color: #2e2f42;
 }
 
+.our-features-description {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Элемент списка: рассчитываем ширину, чтобы их влезло ровно 4 */
+/*(100% - (количество зазоров * размер зазора)) / количество элементов */
+.our-features-description li {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+/*Текст параграфа */
+.our-features-description p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+/* Заголовок внутри карточки */
+/* Небольшой отступ от заголовка до текста */
 .our-features-title {
-  text-align: left;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
