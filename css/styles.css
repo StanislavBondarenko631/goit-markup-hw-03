@@ -8,6 +8,11 @@ body {
   background-color: #fff;
 }
 
+address {
+  margin-left: auto;
+  font-style: normal;
+}
+
 ul {
   margin: 0;
   padding-left: 0;
@@ -42,7 +47,32 @@ p {
 /* ------ header------ */
 
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  margin-left: 76px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+/* Выстраиваем списки внутри навигации и адреса в строку */
+.nav-list,
+address ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-link {
