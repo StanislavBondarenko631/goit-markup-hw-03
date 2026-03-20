@@ -57,14 +57,6 @@ p {
   align-items: center;
 }
 
-.navigation {
-  margin-left: 76px;
-}
-
-.nav-list {
-  display: flex;
-}
-
 .logo-link {
   text-transform: uppercase;
   text-decoration: none;
@@ -78,6 +70,14 @@ p {
 
 .logo-link-span {
   color: #2e2f42;
+}
+
+.navigation {
+  margin-left: 76px;
+}
+
+.nav-list {
+  display: flex;
 }
 
 .link-nav {
@@ -126,37 +126,30 @@ address ul {
 /* align-items: center;    /* Центрируем по горизонтали */
 /* text-align: center;     /* Центрируем текст внутри h1 */
 .hero-background {
-  background-color: #2e2f42;
-  padding: 188px 0;
   display: flex;
   flex-direction: column;
+  padding: 188px 0;
   align-items: center;
   text-align: center;
+  background-color: #2e2f42;
 }
 
 .hero-text {
   text-align: center;
-  font-weight: 700;
-  font-size: 56px;
-  letter-spacing: 0.02em;
-  line-height: 1.07;
-  color: #ffffff;
   /* Чтобы текст переносился как в макете */
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
+
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  color: #ffffff;
 }
 
 .button {
-  color: #ffffff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
   display: block;
   min-width: 169px;
   height: 56px;
@@ -164,6 +157,14 @@ address ul {
   margin: 0 auto;
   border: none;
   border-radius: 4px;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .button:hover,
@@ -171,13 +172,13 @@ address ul {
   background-color: #404bbf;
 }
 
-/* ----our-features----- */
 /* задаем внешние отступы сверху и снизу */
 .our-features {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+/* ----our-features----- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -233,6 +234,11 @@ address ul {
   color: #2e2f42;
 }
 
+.section-our-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
 .our-team {
   text-align: center;
   font-weight: 700;
@@ -240,14 +246,29 @@ address ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  margin-bottom: 72px;
 }
 
-.section-our-team {
-  background-color: #f4f4fd;
+/* 3. Список карточек (ul): выстраиваем в одну строку */
+.list-our-team {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .team-card-backgrounds {
   background-color: #fff;
+  text-align: center;
+  width: calc((100% - 3 * 24px) / 4);
+  /* скругляет только нижние углы элемента (левый и правый) на 4 пикселя, оставляя верхние углы острыми (0px). */
+  border-radius: 0px 0px 4px 4px;
+  /* добавляет тень к элементу */
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team {
@@ -257,6 +278,9 @@ address ul {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
+
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .department {
@@ -266,6 +290,12 @@ address ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  margin-bottom: 32px;
+}
+
+.section-our-portfolio {
+  padding: 120px 0;
 }
 
 .our-portfolio {
@@ -275,6 +305,25 @@ address ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  /* Позволяет карточкам падать на новый ряд */
+  flex-wrap: wrap;
+  /* Расстояние между колонками */
+  column-gap: 24px;
+  /* Расстояние между рядами по вертикали */
+  row-gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+  /* Добавим рамку для контента под фото, как в макете */
 }
 
 .our-portfolio-title {
@@ -284,12 +333,49 @@ address ul {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
+
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.our-portfolio-article {
+  margin-bottom: 32px;
+}
+
+.portfolio-info {
+  padding: 32px 16px; /* 32px сверху и 32px снизу (до рамки) */
+  border: 1px solid #e7e9fc;
+  border-top: none; /* Убираем верхнюю линию, чтобы она не двоилась с фото */
+}
+
+/* Убираем лишний margin у параграфа, чтобы padding снизу отработал точно 32px */
+.portfolio-info p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
 }
 
 /* ----- footer------ */
 
 .footer-background-color {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+/* 2. Контейнер: выстраиваем логотип и текст в колонку */
+.footer-background-color .container {
+  display: flex;
+  flex-direction: column;
+  /* Прижимаем контент к левому краю */
+  align-items: flex-start;
+}
+
+.footer-background-color .logo-link {
+  /* Позволяет margin-bottom работать правильно */
+  display: inline-block;
+  /* Тот самый отступ 16px до текста */
+  margin-bottom: 16px;
 }
 
 .logo-link-span-footer {
@@ -302,4 +388,7 @@ address ul {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  /* Ключевой параметр для переноса строк как в макете */
+  max-width: 264px;
+  margin: 0;
 }
