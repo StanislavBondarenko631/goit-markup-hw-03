@@ -206,7 +206,7 @@ p {
   color: #2e2f42;
 }
 
-.our-features-description {
+.features-list {
   display: flex;
   gap: 24px;
   margin: 0;
@@ -219,15 +219,6 @@ p {
   width: calc((100% - 3 * 24px) / 4);
 }
 
-/*Текст параграфа */
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin: 0;
-}
-
 /* Заголовок внутри карточки */
 /* Небольшой отступ от заголовка до текста */
 .our-features-title {
@@ -237,6 +228,15 @@ p {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
+}
+
+/*Текст параграфа */
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
 }
 
 .section-our-team {
@@ -256,7 +256,7 @@ p {
 }
 
 .team-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -357,10 +357,11 @@ p {
 }
 
 /* Убираем лишний margin у параграфа, чтобы padding снизу отработал точно 32px */
-.portfolio-info p {
+.our-portfolio-article {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -377,7 +378,7 @@ p {
   flex-direction: column;
 }
 
-.footer-background-color .logo-link {
+.footer-logo {
   /* Позволяет margin-bottom работать правильно */
   display: inline-block;
   /* Тот самый отступ 16px до текста */
