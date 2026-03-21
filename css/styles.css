@@ -76,6 +76,10 @@ p {
 
 .nav-list {
   display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link-nav {
@@ -110,14 +114,6 @@ p {
 .link-address:active,
 .link-address:focus {
   color: #404bbf;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .contacts-list {
