@@ -191,16 +191,6 @@ p {
   border: 0;
 }
 
-/* ---- our-features--- */
-.visually-hidden {
-  text-align: left;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.02em;
-  line-height: 1.111;
-  color: #2e2f42;
-}
-
 .features-list {
   display: flex;
   gap: 24px;
